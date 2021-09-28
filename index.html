@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- ADDING THE ITEMS -->
+      <div class="add-item-form">
+        <h2>SHOPPING LIST</h2>
+        <form action="">
+          <input id="new-task" type="text" placeholder="Add new task" />
+          <button class="addItem-btn" type="button" onclick="addTask()">
+            Add item
+          </button>
+          <div class="error-message">Please type a task!</div>
+        </form>
+      </div>
+
+      <div id="asc-desc-btn">
+        <button onclick="sortTableAsc()">Sort asc</button>
+        <button onclick="sortTableDesc()">Sort desc</button>
+      </div>
+
+      <!-- HIDDEN ITEMS LIST -->
+      <div class="item-list">
+        <table id="table">
+          <tr class='first-row-th'>
+            <th>Item description</th>
+            <th>Action</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
