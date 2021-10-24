@@ -31,6 +31,7 @@ function addTask() {
     table.appendChild(tr);
   }
 
+  //if the button "mark as purchased" is clicked, the item description is striked through
   btn.addEventListener("click", strikeThrough);
   function strikeThrough() {
     td1.classList.add("strikethrough");
@@ -53,6 +54,7 @@ function keyEvent(e) {
 function sortTableAsc() {
   var rows, switching, i, x, y, shouldSwitch;
   switching = true;
+
   while (switching) {
     //no switching is done
     switching = false;
